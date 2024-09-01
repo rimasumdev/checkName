@@ -2,9 +2,8 @@
 function checkName(name) {
   if (typeof name === "string") {
     const lastLetter = ["A", "E", "I", "O", "Y", "U", "W"];
-    const checkName = name.charAt(name.length - 1);
-    const checkNameUpper = checkName.toUpperCase();
-    if (lastLetter.includes(checkNameUpper)) {
+    const checkName = name.charAt(name.length - 1).toUpperCase;
+    if (lastLetter.includes(checkName)) {
       return ("Good Name");
     } else {
         return("Bad Name");
